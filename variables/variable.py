@@ -1,5 +1,5 @@
 from exceptions import VariableTypeError
-from types import SimpleType
+from types_ import SimpleType
 from typing import Any
 
 

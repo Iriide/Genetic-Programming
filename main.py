@@ -1,4 +1,4 @@
-from parser import MiniLanguageParser, MiniLangParser
+from parser_ import MiniLanguageParser, MiniLangParser
 from gen.MiniLanguageLexer import MiniLanguageLexer
 
 from antlr4 import *

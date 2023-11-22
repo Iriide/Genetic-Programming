@@ -23,7 +23,7 @@ declWithOptionalAssignment
 assignmentStatement
             : identifier ASSIGN expression;
 
-ifStatement : KW_IF LPAREN expression RPAREN statement (KW_ELSE KW_IF LPAREN expression RPAREN statement)* (KW_ELSE statement)?;
+ifStatement : KW_IF LPAREN expression RPAREN statement (KW_IF LPAREN expression RPAREN statement)* (KW_ELSE statement)?;
 
 loopStatement
             : KW_WHILE LPAREN expression? RPAREN statement;
@@ -51,22 +51,31 @@ additiveExpression
             ;
 
 relationalExpression
-            : additiveExpression (relation additiveExpression)*
+            : additiveExpression (relation additiveExpression)
             ;
 
 equalityExpression
-            : relationalExpression (equalityRelation relationalExpression)*
+            : relationalExpression (equalityRelation relationalExpression)
             ;
 
 logicalAndExpression
-            : equalityExpression (AND equalityExpression)*
+            : equalityExpression (AND equalityExpression)
             ;
 
 logicalOrExpression
             : logicalAndExpression (OR logicalAndExpression)*
             ;
 
-expression  : logicalOrExpression;
+expression
+            : unaryExpression
+            | primaryExpression
+            | relationalExpression
+            | equalityExpression
+            | logicalAndExpression
+            | logicalOrExpression
+            | additiveExpression
+            | multiplicativeExpression
+            ;
 
 relation    : (LT | LE | GT | GE);
 
