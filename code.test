@@ -1,6 +1,14 @@
 int i;
-read(i);
+int j;
 
-i = 1;
+i = 10;
+j = 20;
+
+if (i < 0) {
+    i = i + j;
+} else {
+    j = j + i;
+}
 
 write(i);
+write(j);

@@ -95,7 +95,17 @@ class MiniLangParser(MiniLanguageParserVisitor):
         return self.visit(ctx.children[0])
 
     def visitPrimaryExpression(self, ctx: MiniLanguageParser.PrimaryExpressionContext):
-        return self.visit(ctx.children[0])
+        if ctx.identifier():
+            return self.variable_memory.get_variable_value(ctx.identifier().getText())
+        elif ctx.literal():
+            if ctx.literal().INTEGER_LITERAL():
+                return int(ctx.literal().getText())
+            elif ctx.literal().FLOAT_LITERAL():
+                return float(ctx.literal().getText())
+            elif ctx.literal().STRING_LITERAL():
+                return str(ctx.literal().getText())
+            elif ctx.literal().BOOL_LITERAL():
+                return bool(ctx.literal().getText())
 
     def visitUnaryExpression(self, ctx: MiniLanguageParser.UnaryExpressionContext):
         if ctx.unaryOperator():
@@ -125,8 +135,6 @@ class MiniLangParser(MiniLanguageParserVisitor):
         value = self.visit(ctx.multiplicativeExpression()[0])
 
         for expression in range(1, len(ctx.multiplicativeExpression())):
-            if value.get_type() == SimpleType.BOOL:
-                raise Exception("Invalid operator")
             if ctx.PLUS()[expression - 1]:
                 value += self.visit(ctx.multiplicativeExpression()[expression])
             elif ctx.MINUS()[expression - 1]:
@@ -141,13 +149,16 @@ class MiniLangParser(MiniLanguageParserVisitor):
         left = self.visit(ctx.additiveExpression(0))
         right = self.visit(ctx.additiveExpression(1))
 
-        if ctx.relation().LT():
+        relation_ctx = ctx.relation()
+
+        # Check the type of the first token in this context
+        if relation_ctx.LT():
             return left < right
-        elif ctx.relation().LE():
+        elif relation_ctx.LE():
             return left <= right
-        elif ctx.relation().GT():
+        elif relation_ctx.GT():
             return left > right
-        elif ctx.relation().GE():
+        elif relation_ctx.GE():
             return left >= right
 
         raise Exception("Invalid operator")
