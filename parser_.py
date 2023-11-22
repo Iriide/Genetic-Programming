@@ -122,11 +122,9 @@ class MiniLangParser(MiniLanguageParserVisitor):
         value = self.visit(ctx.unaryExpression()[0])
 
         for expression in range(1, len(ctx.unaryExpression())):
-            if value.get_type() != SimpleType.INT or value.get_type() != SimpleType.FLOAT:
-                raise Exception("Invalid operator")
-            if ctx.TIMES()[expression - 1]:
+            if ctx.TIMES():
                 value *= self.visit(ctx.unaryExpression()[expression])
-            elif ctx.DIV()[expression - 1] and self.visit(ctx.unaryExpression()[expression]) != 0:
+            elif ctx.DIV() and self.visit(ctx.unaryExpression()[expression]) != 0:
                 value /= self.visit(ctx.unaryExpression()[expression])
 
         return value
@@ -135,9 +133,9 @@ class MiniLangParser(MiniLanguageParserVisitor):
         value = self.visit(ctx.multiplicativeExpression()[0])
 
         for expression in range(1, len(ctx.multiplicativeExpression())):
-            if ctx.PLUS()[expression - 1]:
+            if ctx.PLUS():
                 value += self.visit(ctx.multiplicativeExpression()[expression])
-            elif ctx.MINUS()[expression - 1]:
+            elif ctx.MINUS():
                 value -= self.visit(ctx.multiplicativeExpression()[expression])
 
         return value
@@ -183,9 +181,6 @@ class MiniLangParser(MiniLanguageParserVisitor):
 
         left = self.visit(ctx.equalityExpression(0))
         right = self.visit(ctx.equalityExpression(1))
-
-        if left.get_type() != SimpleType.BOOL or right.get_type() != SimpleType.BOOL:
-            raise Exception("Invalid operator")
 
         return left and right
 

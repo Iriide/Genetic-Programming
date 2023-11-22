@@ -12,3 +12,12 @@ if (i < 0) {
 
 write(i);
 write(j);
+
+while (i > 0) {
+    i = i - 1;
+    j = j * 2;
+    write(i);
+}
+
+write(i);
+write(j);
