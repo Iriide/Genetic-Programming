@@ -1,4 +1,6 @@
-from parser_ import MiniLanguageParser, MiniLangParser
+import logging
+
+from visitor_ import MiniLanguageParser, InterpreterVisitor
 from gen.MiniLanguageLexer import MiniLanguageLexer
 
 from antlr4 import *
@@ -9,6 +11,6 @@ stream = CommonTokenStream(lexer)
 parser = MiniLanguageParser(stream)
 tree = parser.program()
 
-visitor = MiniLangParser('in.in', 'out.out')
+visitor = InterpreterVisitor('in.in', 'out.out')
 visitor.visit(tree)
 

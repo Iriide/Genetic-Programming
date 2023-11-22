@@ -1,4 +1,4 @@
-# Generated from C:/Users/asiaw/Desktop/PG/Genetic-Programming/src/main/antlr4/MiniLanguageLexer.g4 by ANTLR 4.13.1
+# Generated from C:/Users/hikar/Desktop/New programming/Genetic/Grammar/Genetic-Programming/src/main/antlr4\MiniLanguageLexer.g4 by ANTLR 4.12.0
 from antlr4 import *
 from io import StringIO
 import sys
@@ -182,7 +182,7 @@ class MiniLanguageLexer(Lexer):
 
     def __init__(self, input=None, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.13.1")
+        self.checkVersion("4.12.0")
         self._interp = LexerATNSimulator(self, self.atn, self.decisionsToDFA, PredictionContextCache())
         self._actions = None
         self._predicates = None

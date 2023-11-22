@@ -1,8 +1,7 @@
-int i;
-int j;
-
-i = 10;
-j = 20;
+int i = 10;
+int j = 20, k = 30.56;
+string s = "hello";
+bool b = true;
 
 if (i < 0) {
     i = i + j;
@@ -13,11 +12,22 @@ if (i < 0) {
 write(i);
 write(j);
 
-while (i > 0) {
+while (j <= 60) {
     i = i - 1;
     j = j * 2;
     write(i);
 }
+
+if (b == false || i == 8) {
+    write("b is false or i == 8");
+} else {
+    write("b is true");
+}
+
+if (b) {
+    write("Works for single bool");
+}
+
 
 write(i);
 write(j);

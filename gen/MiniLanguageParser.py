@@ -1,4 +1,4 @@
-# Generated from C:/Users/asiaw/Desktop/PG/Genetic-Programming/src/main/antlr4/MiniLanguageParser.g4 by ANTLR 4.13.1
+# Generated from C:/Users/hikar/Desktop/New programming/Genetic/Grammar/Genetic-Programming/src/main/antlr4\MiniLanguageParser.g4 by ANTLR 4.12.0
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -10,76 +10,74 @@ else:
 
 def serializedATN():
     return [
-        4,1,41,210,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
+        4,1,41,206,2,0,7,0,2,1,7,1,2,2,7,2,2,3,7,3,2,4,7,4,2,5,7,5,2,6,7,
         6,2,7,7,7,2,8,7,8,2,9,7,9,2,10,7,10,2,11,7,11,2,12,7,12,2,13,7,13,
         2,14,7,14,2,15,7,15,2,16,7,16,2,17,7,17,2,18,7,18,2,19,7,19,2,20,
         7,20,2,21,7,21,2,22,7,22,2,23,7,23,2,24,7,24,1,0,5,0,52,8,0,10,0,
         12,0,55,9,0,1,0,1,0,1,1,1,1,5,1,61,8,1,10,1,12,1,64,9,1,1,1,1,1,
-        1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,77,8,2,1,3,1,3,1,3,5,3,82,
-        8,3,10,3,12,3,85,9,3,1,3,1,3,1,4,1,4,1,4,3,4,92,8,4,1,5,1,5,1,5,
-        1,5,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,5,6,109,8,6,10,6,
-        12,6,112,9,6,1,6,1,6,3,6,116,8,6,1,7,1,7,1,7,3,7,121,8,7,1,7,1,7,
-        1,7,1,8,1,8,1,8,1,8,1,8,1,8,1,9,1,9,1,9,1,9,1,9,1,9,1,10,1,10,1,
-        10,1,10,1,10,1,10,3,10,144,8,10,1,11,1,11,1,11,1,11,3,11,150,8,11,
-        1,12,1,12,1,12,5,12,155,8,12,10,12,12,12,158,9,12,1,13,1,13,1,13,
-        5,13,163,8,13,10,13,12,13,166,9,13,1,14,1,14,1,14,1,14,1,15,1,15,
-        1,15,1,15,1,16,1,16,1,16,1,16,1,17,1,17,1,17,5,17,183,8,17,10,17,
-        12,17,186,9,17,1,18,1,18,1,18,1,18,1,18,1,18,1,18,1,18,3,18,196,
-        8,18,1,19,1,19,1,20,1,20,1,21,1,21,1,22,1,22,1,23,1,23,1,24,1,24,
-        1,24,0,0,25,0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,
-        38,40,42,44,46,48,0,7,1,0,10,11,1,0,8,9,1,0,33,36,1,0,31,32,2,0,
-        8,9,37,37,1,0,14,17,1,0,27,30,210,0,53,1,0,0,0,2,58,1,0,0,0,4,76,
-        1,0,0,0,6,78,1,0,0,0,8,88,1,0,0,0,10,93,1,0,0,0,12,97,1,0,0,0,14,
-        117,1,0,0,0,16,125,1,0,0,0,18,131,1,0,0,0,20,143,1,0,0,0,22,149,
-        1,0,0,0,24,151,1,0,0,0,26,159,1,0,0,0,28,167,1,0,0,0,30,171,1,0,
-        0,0,32,175,1,0,0,0,34,179,1,0,0,0,36,195,1,0,0,0,38,197,1,0,0,0,
-        40,199,1,0,0,0,42,201,1,0,0,0,44,203,1,0,0,0,46,205,1,0,0,0,48,207,
-        1,0,0,0,50,52,3,4,2,0,51,50,1,0,0,0,52,55,1,0,0,0,53,51,1,0,0,0,
-        53,54,1,0,0,0,54,56,1,0,0,0,55,53,1,0,0,0,56,57,5,0,0,1,57,1,1,0,
-        0,0,58,62,5,6,0,0,59,61,3,4,2,0,60,59,1,0,0,0,61,64,1,0,0,0,62,60,
-        1,0,0,0,62,63,1,0,0,0,63,65,1,0,0,0,64,62,1,0,0,0,65,66,5,7,0,0,
-        66,3,1,0,0,0,67,68,3,10,5,0,68,69,5,13,0,0,69,77,1,0,0,0,70,77,3,
-        6,3,0,71,77,3,14,7,0,72,77,3,12,6,0,73,77,3,16,8,0,74,77,3,18,9,
-        0,75,77,3,2,1,0,76,67,1,0,0,0,76,70,1,0,0,0,76,71,1,0,0,0,76,72,
-        1,0,0,0,76,73,1,0,0,0,76,74,1,0,0,0,76,75,1,0,0,0,77,5,1,0,0,0,78,
-        79,3,48,24,0,79,83,3,8,4,0,80,82,3,8,4,0,81,80,1,0,0,0,82,85,1,0,
-        0,0,83,81,1,0,0,0,83,84,1,0,0,0,84,86,1,0,0,0,85,83,1,0,0,0,86,87,
-        5,13,0,0,87,7,1,0,0,0,88,91,3,46,23,0,89,90,5,12,0,0,90,92,3,36,
-        18,0,91,89,1,0,0,0,91,92,1,0,0,0,92,9,1,0,0,0,93,94,3,46,23,0,94,
-        95,5,12,0,0,95,96,3,36,18,0,96,11,1,0,0,0,97,98,5,18,0,0,98,99,5,
-        4,0,0,99,100,3,36,18,0,100,101,5,5,0,0,101,110,3,4,2,0,102,103,5,
-        18,0,0,103,104,5,4,0,0,104,105,3,36,18,0,105,106,5,5,0,0,106,107,
-        3,4,2,0,107,109,1,0,0,0,108,102,1,0,0,0,109,112,1,0,0,0,110,108,
-        1,0,0,0,110,111,1,0,0,0,111,115,1,0,0,0,112,110,1,0,0,0,113,114,
-        5,19,0,0,114,116,3,4,2,0,115,113,1,0,0,0,115,116,1,0,0,0,116,13,
-        1,0,0,0,117,118,5,20,0,0,118,120,5,4,0,0,119,121,3,36,18,0,120,119,
-        1,0,0,0,120,121,1,0,0,0,121,122,1,0,0,0,122,123,5,5,0,0,123,124,
-        3,4,2,0,124,15,1,0,0,0,125,126,5,21,0,0,126,127,5,4,0,0,127,128,
-        3,46,23,0,128,129,5,5,0,0,129,130,5,13,0,0,130,17,1,0,0,0,131,132,
-        5,22,0,0,132,133,5,4,0,0,133,134,3,36,18,0,134,135,5,5,0,0,135,136,
-        5,13,0,0,136,19,1,0,0,0,137,144,3,44,22,0,138,144,3,46,23,0,139,
-        140,5,4,0,0,140,141,3,36,18,0,141,142,5,5,0,0,142,144,1,0,0,0,143,
-        137,1,0,0,0,143,138,1,0,0,0,143,139,1,0,0,0,144,21,1,0,0,0,145,146,
-        3,42,21,0,146,147,3,22,11,0,147,150,1,0,0,0,148,150,3,20,10,0,149,
-        145,1,0,0,0,149,148,1,0,0,0,150,23,1,0,0,0,151,156,3,22,11,0,152,
-        153,7,0,0,0,153,155,3,22,11,0,154,152,1,0,0,0,155,158,1,0,0,0,156,
-        154,1,0,0,0,156,157,1,0,0,0,157,25,1,0,0,0,158,156,1,0,0,0,159,164,
-        3,24,12,0,160,161,7,1,0,0,161,163,3,24,12,0,162,160,1,0,0,0,163,
-        166,1,0,0,0,164,162,1,0,0,0,164,165,1,0,0,0,165,27,1,0,0,0,166,164,
-        1,0,0,0,167,168,3,26,13,0,168,169,3,38,19,0,169,170,3,26,13,0,170,
-        29,1,0,0,0,171,172,3,28,14,0,172,173,3,40,20,0,173,174,3,28,14,0,
-        174,31,1,0,0,0,175,176,3,30,15,0,176,177,5,25,0,0,177,178,3,30,15,
-        0,178,33,1,0,0,0,179,184,3,32,16,0,180,181,5,26,0,0,181,183,3,32,
-        16,0,182,180,1,0,0,0,183,186,1,0,0,0,184,182,1,0,0,0,184,185,1,0,
-        0,0,185,35,1,0,0,0,186,184,1,0,0,0,187,196,3,22,11,0,188,196,3,20,
-        10,0,189,196,3,28,14,0,190,196,3,30,15,0,191,196,3,32,16,0,192,196,
-        3,34,17,0,193,196,3,26,13,0,194,196,3,24,12,0,195,187,1,0,0,0,195,
-        188,1,0,0,0,195,189,1,0,0,0,195,190,1,0,0,0,195,191,1,0,0,0,195,
-        192,1,0,0,0,195,193,1,0,0,0,195,194,1,0,0,0,196,37,1,0,0,0,197,198,
-        7,2,0,0,198,39,1,0,0,0,199,200,7,3,0,0,200,41,1,0,0,0,201,202,7,
-        4,0,0,202,43,1,0,0,0,203,204,7,5,0,0,204,45,1,0,0,0,205,206,5,38,
-        0,0,206,47,1,0,0,0,207,208,7,6,0,0,208,49,1,0,0,0,14,53,62,76,83,
-        91,110,115,120,143,149,156,164,184,195
+        1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,3,2,77,8,2,1,3,1,3,1,3,1,3,5,
+        3,83,8,3,10,3,12,3,86,9,3,1,3,1,3,1,4,1,4,1,4,3,4,93,8,4,1,5,1,5,
+        1,5,1,5,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,1,6,5,6,111,
+        8,6,10,6,12,6,114,9,6,1,6,1,6,3,6,118,8,6,1,7,1,7,1,7,3,7,123,8,
+        7,1,7,1,7,1,7,1,8,1,8,1,8,1,8,1,8,1,8,1,9,1,9,1,9,1,9,1,9,1,9,1,
+        10,1,10,1,10,1,10,1,10,1,10,3,10,146,8,10,1,11,1,11,1,11,1,11,3,
+        11,152,8,11,1,12,1,12,1,12,5,12,157,8,12,10,12,12,12,160,9,12,1,
+        13,1,13,1,13,5,13,165,8,13,10,13,12,13,168,9,13,1,14,1,14,1,14,1,
+        14,3,14,174,8,14,1,15,1,15,1,15,1,15,3,15,180,8,15,1,16,1,16,1,16,
+        3,16,185,8,16,1,17,1,17,1,17,3,17,190,8,17,1,18,1,18,1,19,1,19,1,
+        20,1,20,1,21,1,21,1,22,1,22,1,23,1,23,1,24,1,24,1,24,0,0,25,0,2,
+        4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,
+        0,7,1,0,10,11,1,0,8,9,1,0,33,36,1,0,31,32,2,0,8,9,37,37,1,0,14,17,
+        1,0,27,30,202,0,53,1,0,0,0,2,58,1,0,0,0,4,76,1,0,0,0,6,78,1,0,0,
+        0,8,89,1,0,0,0,10,94,1,0,0,0,12,98,1,0,0,0,14,119,1,0,0,0,16,127,
+        1,0,0,0,18,133,1,0,0,0,20,145,1,0,0,0,22,151,1,0,0,0,24,153,1,0,
+        0,0,26,161,1,0,0,0,28,169,1,0,0,0,30,175,1,0,0,0,32,181,1,0,0,0,
+        34,186,1,0,0,0,36,191,1,0,0,0,38,193,1,0,0,0,40,195,1,0,0,0,42,197,
+        1,0,0,0,44,199,1,0,0,0,46,201,1,0,0,0,48,203,1,0,0,0,50,52,3,4,2,
+        0,51,50,1,0,0,0,52,55,1,0,0,0,53,51,1,0,0,0,53,54,1,0,0,0,54,56,
+        1,0,0,0,55,53,1,0,0,0,56,57,5,0,0,1,57,1,1,0,0,0,58,62,5,6,0,0,59,
+        61,3,4,2,0,60,59,1,0,0,0,61,64,1,0,0,0,62,60,1,0,0,0,62,63,1,0,0,
+        0,63,65,1,0,0,0,64,62,1,0,0,0,65,66,5,7,0,0,66,3,1,0,0,0,67,68,3,
+        10,5,0,68,69,5,13,0,0,69,77,1,0,0,0,70,77,3,6,3,0,71,77,3,14,7,0,
+        72,77,3,12,6,0,73,77,3,16,8,0,74,77,3,18,9,0,75,77,3,2,1,0,76,67,
+        1,0,0,0,76,70,1,0,0,0,76,71,1,0,0,0,76,72,1,0,0,0,76,73,1,0,0,0,
+        76,74,1,0,0,0,76,75,1,0,0,0,77,5,1,0,0,0,78,79,3,48,24,0,79,84,3,
+        8,4,0,80,81,5,1,0,0,81,83,3,8,4,0,82,80,1,0,0,0,83,86,1,0,0,0,84,
+        82,1,0,0,0,84,85,1,0,0,0,85,87,1,0,0,0,86,84,1,0,0,0,87,88,5,13,
+        0,0,88,7,1,0,0,0,89,92,3,46,23,0,90,91,5,12,0,0,91,93,3,36,18,0,
+        92,90,1,0,0,0,92,93,1,0,0,0,93,9,1,0,0,0,94,95,3,46,23,0,95,96,5,
+        12,0,0,96,97,3,36,18,0,97,11,1,0,0,0,98,99,5,18,0,0,99,100,5,4,0,
+        0,100,101,3,36,18,0,101,102,5,5,0,0,102,112,3,4,2,0,103,104,5,19,
+        0,0,104,105,5,18,0,0,105,106,5,4,0,0,106,107,3,36,18,0,107,108,5,
+        5,0,0,108,109,3,4,2,0,109,111,1,0,0,0,110,103,1,0,0,0,111,114,1,
+        0,0,0,112,110,1,0,0,0,112,113,1,0,0,0,113,117,1,0,0,0,114,112,1,
+        0,0,0,115,116,5,19,0,0,116,118,3,4,2,0,117,115,1,0,0,0,117,118,1,
+        0,0,0,118,13,1,0,0,0,119,120,5,20,0,0,120,122,5,4,0,0,121,123,3,
+        36,18,0,122,121,1,0,0,0,122,123,1,0,0,0,123,124,1,0,0,0,124,125,
+        5,5,0,0,125,126,3,4,2,0,126,15,1,0,0,0,127,128,5,21,0,0,128,129,
+        5,4,0,0,129,130,3,46,23,0,130,131,5,5,0,0,131,132,5,13,0,0,132,17,
+        1,0,0,0,133,134,5,22,0,0,134,135,5,4,0,0,135,136,3,36,18,0,136,137,
+        5,5,0,0,137,138,5,13,0,0,138,19,1,0,0,0,139,146,3,44,22,0,140,146,
+        3,46,23,0,141,142,5,4,0,0,142,143,3,36,18,0,143,144,5,5,0,0,144,
+        146,1,0,0,0,145,139,1,0,0,0,145,140,1,0,0,0,145,141,1,0,0,0,146,
+        21,1,0,0,0,147,148,3,42,21,0,148,149,3,22,11,0,149,152,1,0,0,0,150,
+        152,3,20,10,0,151,147,1,0,0,0,151,150,1,0,0,0,152,23,1,0,0,0,153,
+        158,3,22,11,0,154,155,7,0,0,0,155,157,3,22,11,0,156,154,1,0,0,0,
+        157,160,1,0,0,0,158,156,1,0,0,0,158,159,1,0,0,0,159,25,1,0,0,0,160,
+        158,1,0,0,0,161,166,3,24,12,0,162,163,7,1,0,0,163,165,3,24,12,0,
+        164,162,1,0,0,0,165,168,1,0,0,0,166,164,1,0,0,0,166,167,1,0,0,0,
+        167,27,1,0,0,0,168,166,1,0,0,0,169,173,3,26,13,0,170,171,3,38,19,
+        0,171,172,3,26,13,0,172,174,1,0,0,0,173,170,1,0,0,0,173,174,1,0,
+        0,0,174,29,1,0,0,0,175,179,3,28,14,0,176,177,3,40,20,0,177,178,3,
+        28,14,0,178,180,1,0,0,0,179,176,1,0,0,0,179,180,1,0,0,0,180,31,1,
+        0,0,0,181,184,3,30,15,0,182,183,5,25,0,0,183,185,3,30,15,0,184,182,
+        1,0,0,0,184,185,1,0,0,0,185,33,1,0,0,0,186,189,3,32,16,0,187,188,
+        5,26,0,0,188,190,3,32,16,0,189,187,1,0,0,0,189,190,1,0,0,0,190,35,
+        1,0,0,0,191,192,3,34,17,0,192,37,1,0,0,0,193,194,7,2,0,0,194,39,
+        1,0,0,0,195,196,7,3,0,0,196,41,1,0,0,0,197,198,7,4,0,0,198,43,1,
+        0,0,0,199,200,7,5,0,0,200,45,1,0,0,0,201,202,5,38,0,0,202,47,1,0,
+        0,0,203,204,7,6,0,0,204,49,1,0,0,0,16,53,62,76,84,92,112,117,122,
+        145,151,158,166,173,179,184,189
     ]
 
 class MiniLanguageParser ( Parser ):
@@ -187,7 +185,7 @@ class MiniLanguageParser ( Parser ):
 
     def __init__(self, input:TokenStream, output:TextIO = sys.stdout):
         super().__init__(input, output)
-        self.checkVersion("4.13.1")
+        self.checkVersion("4.12.0")
         self._interp = ParserATNSimulator(self, self.atn, self.decisionsToDFA, self.sharedContextCache)
         self._predicates = None
 
@@ -465,6 +463,12 @@ class MiniLanguageParser ( Parser ):
         def SEMI(self):
             return self.getToken(MiniLanguageParser.SEMI, 0)
 
+        def COMMA(self, i:int=None):
+            if i is None:
+                return self.getTokens(MiniLanguageParser.COMMA)
+            else:
+                return self.getToken(MiniLanguageParser.COMMA, i)
+
         def getRuleIndex(self):
             return MiniLanguageParser.RULE_declStatement
 
@@ -496,17 +500,19 @@ class MiniLanguageParser ( Parser ):
             self.typeSpecifier()
             self.state = 79
             self.declWithOptionalAssignment()
-            self.state = 83
+            self.state = 84
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==38:
+            while _la==1:
                 self.state = 80
+                self.match(MiniLanguageParser.COMMA)
+                self.state = 81
                 self.declWithOptionalAssignment()
-                self.state = 85
+                self.state = 86
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
-            self.state = 86
+            self.state = 87
             self.match(MiniLanguageParser.SEMI)
         except RecognitionException as re:
             localctx.exception = re
@@ -562,15 +568,15 @@ class MiniLanguageParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 88
+            self.state = 89
             self.identifier()
-            self.state = 91
+            self.state = 92
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if _la==12:
-                self.state = 89
-                self.match(MiniLanguageParser.ASSIGN)
                 self.state = 90
+                self.match(MiniLanguageParser.ASSIGN)
+                self.state = 91
                 self.expression()
 
 
@@ -627,11 +633,11 @@ class MiniLanguageParser ( Parser ):
         self.enterRule(localctx, 10, self.RULE_assignmentStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 93
-            self.identifier()
             self.state = 94
-            self.match(MiniLanguageParser.ASSIGN)
+            self.identifier()
             self.state = 95
+            self.match(MiniLanguageParser.ASSIGN)
+            self.state = 96
             self.expression()
         except RecognitionException as re:
             localctx.exception = re
@@ -681,8 +687,11 @@ class MiniLanguageParser ( Parser ):
                 return self.getTypedRuleContext(MiniLanguageParser.StatementContext,i)
 
 
-        def KW_ELSE(self):
-            return self.getToken(MiniLanguageParser.KW_ELSE, 0)
+        def KW_ELSE(self, i:int=None):
+            if i is None:
+                return self.getTokens(MiniLanguageParser.KW_ELSE)
+            else:
+                return self.getToken(MiniLanguageParser.KW_ELSE, i)
 
         def getRuleIndex(self):
             return MiniLanguageParser.RULE_ifStatement
@@ -710,42 +719,44 @@ class MiniLanguageParser ( Parser ):
         self.enterRule(localctx, 12, self.RULE_ifStatement)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 97
-            self.match(MiniLanguageParser.KW_IF)
             self.state = 98
-            self.match(MiniLanguageParser.LPAREN)
+            self.match(MiniLanguageParser.KW_IF)
             self.state = 99
-            self.expression()
+            self.match(MiniLanguageParser.LPAREN)
             self.state = 100
-            self.match(MiniLanguageParser.RPAREN)
+            self.expression()
             self.state = 101
+            self.match(MiniLanguageParser.RPAREN)
+            self.state = 102
             self.statement()
-            self.state = 110
+            self.state = 112
             self._errHandler.sync(self)
             _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
             while _alt!=2 and _alt!=ATN.INVALID_ALT_NUMBER:
                 if _alt==1:
-                    self.state = 102
-                    self.match(MiniLanguageParser.KW_IF)
                     self.state = 103
-                    self.match(MiniLanguageParser.LPAREN)
+                    self.match(MiniLanguageParser.KW_ELSE)
                     self.state = 104
-                    self.expression()
+                    self.match(MiniLanguageParser.KW_IF)
                     self.state = 105
-                    self.match(MiniLanguageParser.RPAREN)
+                    self.match(MiniLanguageParser.LPAREN)
                     self.state = 106
+                    self.expression()
+                    self.state = 107
+                    self.match(MiniLanguageParser.RPAREN)
+                    self.state = 108
                     self.statement() 
-                self.state = 112
+                self.state = 114
                 self._errHandler.sync(self)
                 _alt = self._interp.adaptivePredict(self._input,5,self._ctx)
 
-            self.state = 115
+            self.state = 117
             self._errHandler.sync(self)
             la_ = self._interp.adaptivePredict(self._input,6,self._ctx)
             if la_ == 1:
-                self.state = 113
+                self.state = 115
                 self.match(MiniLanguageParser.KW_ELSE)
-                self.state = 114
+                self.state = 116
                 self.statement()
 
 
@@ -809,21 +820,21 @@ class MiniLanguageParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 117
+            self.state = 119
             self.match(MiniLanguageParser.KW_WHILE)
-            self.state = 118
-            self.match(MiniLanguageParser.LPAREN)
             self.state = 120
+            self.match(MiniLanguageParser.LPAREN)
+            self.state = 122
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             if (((_la) & ~0x3f) == 0 and ((1 << _la) & 412317106960) != 0):
-                self.state = 119
+                self.state = 121
                 self.expression()
 
 
-            self.state = 122
+            self.state = 124
             self.match(MiniLanguageParser.RPAREN)
-            self.state = 123
+            self.state = 125
             self.statement()
         except RecognitionException as re:
             localctx.exception = re
@@ -883,15 +894,15 @@ class MiniLanguageParser ( Parser ):
         self.enterRule(localctx, 16, self.RULE_read)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 125
-            self.match(MiniLanguageParser.KW_READ)
-            self.state = 126
-            self.match(MiniLanguageParser.LPAREN)
             self.state = 127
-            self.identifier()
+            self.match(MiniLanguageParser.KW_READ)
             self.state = 128
-            self.match(MiniLanguageParser.RPAREN)
+            self.match(MiniLanguageParser.LPAREN)
             self.state = 129
+            self.identifier()
+            self.state = 130
+            self.match(MiniLanguageParser.RPAREN)
+            self.state = 131
             self.match(MiniLanguageParser.SEMI)
         except RecognitionException as re:
             localctx.exception = re
@@ -951,15 +962,15 @@ class MiniLanguageParser ( Parser ):
         self.enterRule(localctx, 18, self.RULE_write)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 131
-            self.match(MiniLanguageParser.KW_WRITE)
-            self.state = 132
-            self.match(MiniLanguageParser.LPAREN)
             self.state = 133
-            self.expression()
+            self.match(MiniLanguageParser.KW_WRITE)
             self.state = 134
-            self.match(MiniLanguageParser.RPAREN)
+            self.match(MiniLanguageParser.LPAREN)
             self.state = 135
+            self.expression()
+            self.state = 136
+            self.match(MiniLanguageParser.RPAREN)
+            self.state = 137
             self.match(MiniLanguageParser.SEMI)
         except RecognitionException as re:
             localctx.exception = re
@@ -1020,26 +1031,26 @@ class MiniLanguageParser ( Parser ):
         localctx = MiniLanguageParser.PrimaryExpressionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 20, self.RULE_primaryExpression)
         try:
-            self.state = 143
+            self.state = 145
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [14, 15, 16, 17]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 137
+                self.state = 139
                 self.literal()
                 pass
             elif token in [38]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 138
+                self.state = 140
                 self.identifier()
                 pass
             elif token in [4]:
                 self.enterOuterAlt(localctx, 3)
-                self.state = 139
-                self.match(MiniLanguageParser.LPAREN)
-                self.state = 140
-                self.expression()
                 self.state = 141
+                self.match(MiniLanguageParser.LPAREN)
+                self.state = 142
+                self.expression()
+                self.state = 143
                 self.match(MiniLanguageParser.RPAREN)
                 pass
             else:
@@ -1098,19 +1109,19 @@ class MiniLanguageParser ( Parser ):
         localctx = MiniLanguageParser.UnaryExpressionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 22, self.RULE_unaryExpression)
         try:
-            self.state = 149
+            self.state = 151
             self._errHandler.sync(self)
             token = self._input.LA(1)
             if token in [8, 9, 37]:
                 self.enterOuterAlt(localctx, 1)
-                self.state = 145
+                self.state = 147
                 self.unaryOperator()
-                self.state = 146
+                self.state = 148
                 self.unaryExpression()
                 pass
             elif token in [4, 14, 15, 16, 17, 38]:
                 self.enterOuterAlt(localctx, 2)
-                self.state = 148
+                self.state = 150
                 self.primaryExpression()
                 pass
             else:
@@ -1178,22 +1189,22 @@ class MiniLanguageParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 151
+            self.state = 153
             self.unaryExpression()
-            self.state = 156
+            self.state = 158
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==10 or _la==11:
-                self.state = 152
+                self.state = 154
                 _la = self._input.LA(1)
                 if not(_la==10 or _la==11):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
                     self.consume()
-                self.state = 153
+                self.state = 155
                 self.unaryExpression()
-                self.state = 158
+                self.state = 160
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1259,22 +1270,22 @@ class MiniLanguageParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 159
+            self.state = 161
             self.multiplicativeExpression()
-            self.state = 164
+            self.state = 166
             self._errHandler.sync(self)
             _la = self._input.LA(1)
             while _la==8 or _la==9:
-                self.state = 160
+                self.state = 162
                 _la = self._input.LA(1)
                 if not(_la==8 or _la==9):
                     self._errHandler.recoverInline(self)
                 else:
                     self._errHandler.reportMatch(self)
                     self.consume()
-                self.state = 161
+                self.state = 163
                 self.multiplicativeExpression()
-                self.state = 166
+                self.state = 168
                 self._errHandler.sync(self)
                 _la = self._input.LA(1)
 
@@ -1329,15 +1340,21 @@ class MiniLanguageParser ( Parser ):
 
         localctx = MiniLanguageParser.RelationalExpressionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 28, self.RULE_relationalExpression)
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 167
-            self.additiveExpression()
-
-            self.state = 168
-            self.relation()
             self.state = 169
             self.additiveExpression()
+            self.state = 173
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if (((_la) & ~0x3f) == 0 and ((1 << _la) & 128849018880) != 0):
+                self.state = 170
+                self.relation()
+                self.state = 171
+                self.additiveExpression()
+
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1389,15 +1406,21 @@ class MiniLanguageParser ( Parser ):
 
         localctx = MiniLanguageParser.EqualityExpressionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 30, self.RULE_equalityExpression)
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 171
+            self.state = 175
             self.relationalExpression()
+            self.state = 179
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if _la==31 or _la==32:
+                self.state = 176
+                self.equalityRelation()
+                self.state = 177
+                self.relationalExpression()
 
-            self.state = 172
-            self.equalityRelation()
-            self.state = 173
-            self.relationalExpression()
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1448,15 +1471,21 @@ class MiniLanguageParser ( Parser ):
 
         localctx = MiniLanguageParser.LogicalAndExpressionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 32, self.RULE_logicalAndExpression)
+        self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 175
+            self.state = 181
             self.equalityExpression()
+            self.state = 184
+            self._errHandler.sync(self)
+            _la = self._input.LA(1)
+            if _la==25:
+                self.state = 182
+                self.match(MiniLanguageParser.AND)
+                self.state = 183
+                self.equalityExpression()
 
-            self.state = 176
-            self.match(MiniLanguageParser.AND)
-            self.state = 177
-            self.equalityExpression()
+
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1480,11 +1509,8 @@ class MiniLanguageParser ( Parser ):
                 return self.getTypedRuleContext(MiniLanguageParser.LogicalAndExpressionContext,i)
 
 
-        def OR(self, i:int=None):
-            if i is None:
-                return self.getTokens(MiniLanguageParser.OR)
-            else:
-                return self.getToken(MiniLanguageParser.OR, i)
+        def OR(self):
+            return self.getToken(MiniLanguageParser.OR, 0)
 
         def getRuleIndex(self):
             return MiniLanguageParser.RULE_logicalOrExpression
@@ -1513,19 +1539,17 @@ class MiniLanguageParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 179
+            self.state = 186
             self.logicalAndExpression()
-            self.state = 184
+            self.state = 189
             self._errHandler.sync(self)
             _la = self._input.LA(1)
-            while _la==26:
-                self.state = 180
+            if _la==26:
+                self.state = 187
                 self.match(MiniLanguageParser.OR)
-                self.state = 181
+                self.state = 188
                 self.logicalAndExpression()
-                self.state = 186
-                self._errHandler.sync(self)
-                _la = self._input.LA(1)
+
 
         except RecognitionException as re:
             localctx.exception = re
@@ -1543,36 +1567,8 @@ class MiniLanguageParser ( Parser ):
             super().__init__(parent, invokingState)
             self.parser = parser
 
-        def unaryExpression(self):
-            return self.getTypedRuleContext(MiniLanguageParser.UnaryExpressionContext,0)
-
-
-        def primaryExpression(self):
-            return self.getTypedRuleContext(MiniLanguageParser.PrimaryExpressionContext,0)
-
-
-        def relationalExpression(self):
-            return self.getTypedRuleContext(MiniLanguageParser.RelationalExpressionContext,0)
-
-
-        def equalityExpression(self):
-            return self.getTypedRuleContext(MiniLanguageParser.EqualityExpressionContext,0)
-
-
-        def logicalAndExpression(self):
-            return self.getTypedRuleContext(MiniLanguageParser.LogicalAndExpressionContext,0)
-
-
         def logicalOrExpression(self):
             return self.getTypedRuleContext(MiniLanguageParser.LogicalOrExpressionContext,0)
-
-
-        def additiveExpression(self):
-            return self.getTypedRuleContext(MiniLanguageParser.AdditiveExpressionContext,0)
-
-
-        def multiplicativeExpression(self):
-            return self.getTypedRuleContext(MiniLanguageParser.MultiplicativeExpressionContext,0)
 
 
         def getRuleIndex(self):
@@ -1600,58 +1596,9 @@ class MiniLanguageParser ( Parser ):
         localctx = MiniLanguageParser.ExpressionContext(self, self._ctx, self.state)
         self.enterRule(localctx, 36, self.RULE_expression)
         try:
-            self.state = 195
-            self._errHandler.sync(self)
-            la_ = self._interp.adaptivePredict(self._input,13,self._ctx)
-            if la_ == 1:
-                self.enterOuterAlt(localctx, 1)
-                self.state = 187
-                self.unaryExpression()
-                pass
-
-            elif la_ == 2:
-                self.enterOuterAlt(localctx, 2)
-                self.state = 188
-                self.primaryExpression()
-                pass
-
-            elif la_ == 3:
-                self.enterOuterAlt(localctx, 3)
-                self.state = 189
-                self.relationalExpression()
-                pass
-
-            elif la_ == 4:
-                self.enterOuterAlt(localctx, 4)
-                self.state = 190
-                self.equalityExpression()
-                pass
-
-            elif la_ == 5:
-                self.enterOuterAlt(localctx, 5)
-                self.state = 191
-                self.logicalAndExpression()
-                pass
-
-            elif la_ == 6:
-                self.enterOuterAlt(localctx, 6)
-                self.state = 192
-                self.logicalOrExpression()
-                pass
-
-            elif la_ == 7:
-                self.enterOuterAlt(localctx, 7)
-                self.state = 193
-                self.additiveExpression()
-                pass
-
-            elif la_ == 8:
-                self.enterOuterAlt(localctx, 8)
-                self.state = 194
-                self.multiplicativeExpression()
-                pass
-
-
+            self.enterOuterAlt(localctx, 1)
+            self.state = 191
+            self.logicalOrExpression()
         except RecognitionException as re:
             localctx.exception = re
             self._errHandler.reportError(self, re)
@@ -1707,7 +1654,7 @@ class MiniLanguageParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 197
+            self.state = 193
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 128849018880) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1763,7 +1710,7 @@ class MiniLanguageParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 199
+            self.state = 195
             _la = self._input.LA(1)
             if not(_la==31 or _la==32):
                 self._errHandler.recoverInline(self)
@@ -1822,7 +1769,7 @@ class MiniLanguageParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 201
+            self.state = 197
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 137438954240) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1884,7 +1831,7 @@ class MiniLanguageParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 203
+            self.state = 199
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 245760) != 0)):
                 self._errHandler.recoverInline(self)
@@ -1936,7 +1883,7 @@ class MiniLanguageParser ( Parser ):
         self.enterRule(localctx, 46, self.RULE_identifier)
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 205
+            self.state = 201
             self.match(MiniLanguageParser.IDENTIFIER)
         except RecognitionException as re:
             localctx.exception = re
@@ -1993,7 +1940,7 @@ class MiniLanguageParser ( Parser ):
         self._la = 0 # Token type
         try:
             self.enterOuterAlt(localctx, 1)
-            self.state = 207
+            self.state = 203
             _la = self._input.LA(1)
             if not((((_la) & ~0x3f) == 0 and ((1 << _la) & 2013265920) != 0)):
                 self._errHandler.recoverInline(self)

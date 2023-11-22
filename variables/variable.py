@@ -1,5 +1,5 @@
 from exceptions import VariableTypeError
-from types_ import SimpleType
+from types_ import SimpleType, get_simple_type
 from typing import Any
 
 
@@ -9,9 +9,12 @@ class Variable:
     identifier: str
     type: SimpleType
 
-    def __init__(self, identifier: str, variable_type: SimpleType):
+    def __init__(self, identifier: str, variable_type: SimpleType | Any):
         self.identifier = identifier
-        self.type = variable_type
+        if isinstance(variable_type, SimpleType):
+            self.type = variable_type
+        else:
+            self.type = get_simple_type(variable_type)
         self.declared = False
         self.value = None
 
@@ -24,3 +27,16 @@ class Variable:
             self.value = self.type.value(value)
         except ValueError:
             raise VariableTypeError(self.identifier, self.type.name, value.__class__.__name__)
+
+    def set_type(self, variable_type: SimpleType | Any):
+        if isinstance(variable_type, SimpleType):
+            self.type = variable_type
+        else:
+            self.type = get_simple_type(variable_type)
+
+    @staticmethod
+    def create_and_assign(identifier: str, variable_type: SimpleType | Any, value: Any) -> "Variable":
+        variable = Variable(identifier, variable_type)
+        variable.on_declare()
+        variable.on_assign(value)
+        return variable
