@@ -1,0 +1,6 @@
+int i;
+read(i);
+
+i = 1;
+
+write(i);
