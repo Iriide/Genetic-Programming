@@ -1,6 +1,6 @@
 from exceptions import VariableNotDeclaredError, VariableAlreadyDeclaredError
 from variables.variable import Variable
-from types_ import SimpleType
+from simple_type import SimpleType
 from typing import Any
 from utils.logger import createLogger
 import logging

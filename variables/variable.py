@@ -1,5 +1,5 @@
 from exceptions import VariableTypeError
-from types_ import SimpleType, get_simple_type
+from simple_type import SimpleType, simple_type_from_generic_type
 from typing import Any
 
 
@@ -14,7 +14,7 @@ class Variable:
         if isinstance(variable_type, SimpleType):
             self.type = variable_type
         else:
-            self.type = get_simple_type(variable_type)
+            self.type = simple_type_from_generic_type(variable_type)
         self.declared = False
         self.value = None
 
@@ -32,7 +32,7 @@ class Variable:
         if isinstance(variable_type, SimpleType):
             self.type = variable_type
         else:
-            self.type = get_simple_type(variable_type)
+            self.type = simple_type_from_generic_type(variable_type)
 
     @staticmethod
     def create_and_assign(identifier: str, variable_type: SimpleType | Any, value: Any) -> "Variable":

@@ -1,16 +1,18 @@
-import logging
-
-from visitor_ import MiniLanguageParser, InterpreterVisitor
+from visitor import MiniLanguageParser, InterpreterVisitor
 from gen.MiniLanguageLexer import MiniLanguageLexer
+from antlr4 import FileStream, CommonTokenStream
 
-from antlr4 import *
 
-in_file = FileStream('code.test')
-lexer = MiniLanguageLexer(in_file)
-stream = CommonTokenStream(lexer)
-parser = MiniLanguageParser(stream)
-tree = parser.program()
+def main():
+    in_file = FileStream('mini_lang/code.test')
+    lexer = MiniLanguageLexer(in_file)
+    stream = CommonTokenStream(lexer)
+    parser = MiniLanguageParser(stream)
+    tree = parser.program()
 
-visitor = InterpreterVisitor('in.in', 'out.out')
-visitor.visit(tree)
+    visitor = InterpreterVisitor('mini_lang/in.in', 'mini_lang/out.out')
+    visitor.visit(tree)
 
+
+if __name__ == '__main__':
+    main()

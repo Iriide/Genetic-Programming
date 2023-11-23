@@ -1,0 +1,24 @@
+write("Welcome to fibonacci number calculator");
+write("--------------------------------------");
+write("Enter the number of fibonacci numbers you want to calculate:");
+write("")
+
+int n;
+read(n);
+int i = 1;
+
+int f1 = 1;
+int f2 = 1;
+int temp;
+
+
+while (i < n) {
+    write("F(" + i + ") = " + f1);
+    temp = f1;
+    f1 = f2;
+    f2 = temp + f2;
+    i = i + 1;
+}
+
+write("")
+write("The " + n + "th fibonacci number is " + f1);

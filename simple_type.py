@@ -8,7 +8,7 @@ class SimpleType(Enum):
     BOOL = bool
 
 
-def get_simple_type(type_obj) -> SimpleType:
+def simple_type_from_generic_type(type_obj) -> SimpleType:
     if type_obj == int:
         return SimpleType.INT
     elif type_obj == float:

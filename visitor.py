@@ -1,10 +1,10 @@
 import logging
 
 import utils.logger
-from binaryOperationHandler import BinaryOperationHandler, NumericOnlyOperation
+from binary_operation_handler import BinaryOperationHandler, NumericOnlyOperation
 from gen.MiniLanguageParserVisitor import MiniLanguageParserVisitor
 from gen.MiniLanguageParser import MiniLanguageParser
-from types_ import SimpleType
+from simple_type import SimpleType
 from typing import TextIO
 
 from variables.memory import VariableMemory

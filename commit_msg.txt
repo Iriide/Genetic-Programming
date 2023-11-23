@@ -1,0 +1,5 @@
+[Genetic Programming] Implement binary handlers and logging.
+
+- Implemented binary handlers for arithmetic and logic operations with type checking.
+- Added custom defined loggers in visitor and variable memory to log important procedures on debug level.
+- Fixed grammar so it now parses correctly.
