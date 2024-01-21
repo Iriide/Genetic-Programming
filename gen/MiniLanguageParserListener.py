@@ -1,4 +1,4 @@
-# Generated from C:/Users/hikar/Desktop/New programming/Genetic/Grammar/Genetic-Programming/src/main/antlr4\MiniLanguageParser.g4 by ANTLR 4.12.0
+# Generated from C:/Users/hikar/Desktop/New programming/Genetic/Grammar/Genetic-Programming/grammar\MiniLanguageParser.g4 by ANTLR 4.12.0
 from antlr4 import *
 if __name__ is not None and "." in __name__:
     from .MiniLanguageParser import MiniLanguageParser

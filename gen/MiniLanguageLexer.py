@@ -1,4 +1,4 @@
-# Generated from C:/Users/hikar/Desktop/New programming/Genetic/Grammar/Genetic-Programming/src/main/antlr4\MiniLanguageLexer.g4 by ANTLR 4.12.0
+# Generated from C:/Users/hikar/Desktop/New programming/Genetic/Grammar/Genetic-Programming/grammar\MiniLanguageLexer.g4 by ANTLR 4.12.0
 from antlr4 import *
 from io import StringIO
 import sys

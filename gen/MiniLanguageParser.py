@@ -1,4 +1,4 @@
-# Generated from C:/Users/hikar/Desktop/New programming/Genetic/Grammar/Genetic-Programming/src/main/antlr4\MiniLanguageParser.g4 by ANTLR 4.12.0
+# Generated from C:/Users/hikar/Desktop/New programming/Genetic/Grammar/Genetic-Programming/grammar\MiniLanguageParser.g4 by ANTLR 4.12.0
 # encoding: utf-8
 from antlr4 import *
 from io import StringIO
@@ -60,7 +60,7 @@ def serializedATN():
         5,5,0,0,137,138,5,13,0,0,138,19,1,0,0,0,139,146,3,44,22,0,140,146,
         3,46,23,0,141,142,5,4,0,0,142,143,3,36,18,0,143,144,5,5,0,0,144,
         146,1,0,0,0,145,139,1,0,0,0,145,140,1,0,0,0,145,141,1,0,0,0,146,
-        21,1,0,0,0,147,148,3,42,21,0,148,149,3,22,11,0,149,152,1,0,0,0,150,
+        21,1,0,0,0,147,148,3,42,21,0,148,149,3,20,10,0,149,152,1,0,0,0,150,
         152,3,20,10,0,151,147,1,0,0,0,151,150,1,0,0,0,152,23,1,0,0,0,153,
         158,3,22,11,0,154,155,7,0,0,0,155,157,3,22,11,0,156,154,1,0,0,0,
         157,160,1,0,0,0,158,156,1,0,0,0,158,159,1,0,0,0,159,25,1,0,0,0,160,
@@ -1076,10 +1076,6 @@ class MiniLanguageParser ( Parser ):
             return self.getTypedRuleContext(MiniLanguageParser.UnaryOperatorContext,0)
 
 
-        def unaryExpression(self):
-            return self.getTypedRuleContext(MiniLanguageParser.UnaryExpressionContext,0)
-
-
         def primaryExpression(self):
             return self.getTypedRuleContext(MiniLanguageParser.PrimaryExpressionContext,0)
 
@@ -1117,7 +1113,7 @@ class MiniLanguageParser ( Parser ):
                 self.state = 147
                 self.unaryOperator()
                 self.state = 148
-                self.unaryExpression()
+                self.primaryExpression()
                 pass
             elif token in [4, 14, 15, 16, 17, 38]:
                 self.enterOuterAlt(localctx, 2)

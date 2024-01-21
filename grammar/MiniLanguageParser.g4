@@ -39,7 +39,7 @@ primaryExpression
             ;
 
 unaryExpression
-            : unaryOperator unaryExpression
+            : unaryOperator primaryExpression
             | primaryExpression;
 
 multiplicativeExpression
